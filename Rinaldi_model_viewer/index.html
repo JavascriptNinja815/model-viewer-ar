@@ -10,7 +10,7 @@
 <body>
 	<p align="center">
 		<model-viewer id="xfade-demo" camera-controls animation-name="Vertical" style="width:100%;height:500px;"
-			background-color="#ffffff" autoplay="false" poster=""
+			background-color="#ffffff" autoplay poster=""
 			src="https://rinaldi-parungao-ss3f.squarespace.com/assets/testanimation.glb" camera-controls
 			environment-image="https://rinaldi-parungao-ss3f.squarespace.com/assets/Studio 08.hdr" ar auto-rotate
 			ar-scale="fixed" alt="View In Your Space"
@@ -22,7 +22,6 @@
 			modelViewer.addEventListener('click', (e) => {
 				let animationType = modelViewer.animationName === 'Horizonal' ? 'Vertical' : 'Horizonal';
 				modelViewer.setAttribute('animation-name', animationType);
-				modelViewer.setAttribute('autoplay', 'true');
 			});
 		</script>
 	</p>
